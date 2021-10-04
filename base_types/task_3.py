@@ -7,11 +7,9 @@
 for x in range(1, 101):
     s = '';
     if x % 3 == 0:
-        s += 'Fizz\n'
+        s += 'Fizz'
     if x % 5 == 0:
-        s += "Buzz\n"
-    if x % 15 == 0:
-        s += "FizzBuzz\n"
+        s += "Buzz"
     if s == '':
-        s = x
-    print(s, end='\n')
+        s = "fizz" * (not (x % 3)) + "buzz" * (not (x % 5))
+    print(str(x) * (not (s)) + s)
