@@ -4,13 +4,25 @@
 Пример: a/b = 1/3 c/b = 5/3
 Вывод: 1/3 + 5/3 = 6/3
 """
-a = input('Введите целое число a: ')
-b = input('Введите целое число b: ')
-c = input('Введите целое число c: ')
-x = int(a) + int(c)
+a = int(input('Введите целое число a: '))
+b = int(input('Введите целое число b: '))
+# try:
+#     b = 100 / 0
+# except ZeroDivisionError:
+#     # input('Нельзя делить на 0')
+#     b = int(input('Введите целое число b: '))
+# else:
+#     pass
+# finally:
+#     pass
+c = int(input('Введите целое число c: '))
 
-
-# print(f'a/b = {a}/{b}')
-# print(f'c/b = {c}/{b}')
+x = a + c
 
 print(f'{a}/{b} + {c}/{b} = {x}/{b}')
+
+
+
+
+
+
